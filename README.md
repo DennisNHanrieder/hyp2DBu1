@@ -1,3 +1,4 @@
+[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-24ddc0f5d75046c5622901739e7c5dd533143b0c8e959d652212380cedb1ea36.svg)](https://classroom.github.com/a/K0up1E3U)
 # Beschreibung
 Der erste Teil an der Arbeit mit QuizQuest beschäftigt sich damit, eine entsprechende Datenbank aufzubauen, die alle relevanten Informationen verwaltet. In der ersten Übungseinheit haben wir uns bereits mit dem groben Aufbau der Datenbank bzw. der Tabellen beschäftigt. In dieser Einheit werden wir darauf aufbauen, diese erweitern und in weiterer Folge auch eine Manipulation der Daten durchführen. 
 
