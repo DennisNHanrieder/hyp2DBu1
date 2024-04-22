@@ -1,7 +1,7 @@
 -- Erstelle die Datenbank "QuizQuest"
 CREATE DATABASE IF NOT EXISTS QuizQuest;
 
--- Nutze die erstellte Datenbank
+-- Nutze die erstellte Datenbak
 USE QuizQuest;
 
 -- Erstelle die Tabelle "User"
