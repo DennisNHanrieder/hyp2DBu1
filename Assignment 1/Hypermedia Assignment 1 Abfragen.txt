@@ -1,0 +1,22 @@
+1. SELECT Username FROM User WHERE Country = 'AUT';
+
+2. SELECT Game.Title, COUNT(Question.ID) AS Question_Count FROM Game INNER JOIN Question ON Game.ID = Question.GameID GROUP BY Game.Title;
+
+3.SELECT User.Username, SUM(PlayerAnswer.Points) AS Total_Points FROM User INNER JOIN PlayerAnswer ON User.ID = PlayerAnswer.UserID GROUP BY User.Username                             
+  ORDER BY Total_Points DESC;
+
+4. SELECT DISTINCT User.Username, Game.Title
+	FROM User
+	JOIN PlayerAnswer ON User.ID = PlayerAnswer.UserID
+	JOIN Question ON PlayerAnswer.QuestionID = Question.ID
+	JOIN Game ON Question.GameID = Game.ID
+	WHERE Game.ID = 1;
+
+
+5. SELECT User.Username, COUNT(PlayerAnswer.ID) AS Correct_Answers
+	FROM User
+	JOIN PlayerAnswer ON User.ID = PlayerAnswer.UserID
+	JOIN Answer ON PlayerAnswer.AnswerID = Answer.ID
+	JOIN Question ON PlayerAnswer.QuestionID = Question.ID
+	WHERE Answer.isCorrect = 1 AND Question.GameID = 1
+	GROUP BY User.Username;
